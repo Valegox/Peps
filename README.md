@@ -15,7 +15,7 @@ Firebase est le service utilisé pour la base de données qui stocke les program
 ### Langage de programmation: bases algorithmiques
 - [x] Lecture algorithmique et envoi du futur code Peps sur la base de données
 - [x] Affichage de la console lorsque le code commence par le mot-clé CONSOLE
-- [x] Initialisation du compileur et des types primitifs et complexes
+- [x] Initialisation du compileur et des types primitifs
 - [x] Fonction basique ```print()```
 - [x] Type complexe: ```equality```
 - [x] Type complexe: ```operation```
