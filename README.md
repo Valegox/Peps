@@ -130,7 +130,7 @@ else:
   print("2 + 2 n'est pas égal à 5") //cette ligne sera exécutée
 ```
 ## Types complexes
-Les types complexes sont les types qui retournent une valeur dont le type est simple.
+Les types complexes sont les types qui retournent une ou plusieurs valeurs dont le type est simple.
 ### function
 #### Description
 Fonction qui exécute du code et retourne une valeur.
