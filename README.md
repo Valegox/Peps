@@ -40,6 +40,7 @@ Firebase est le service utilisé pour la base de données qui stocke les program
 - [ ] Mise en place d'un ```state``` (état) associé à chaque composant
 - [ ] Possibilité de créer des ```state``` globaux qu'une liste de composant définie peut récupérer / mettre à jour
 - [ ] Evenement associé à une mise à jour du composant, causée par la mise à jour du ```state``` du composant ou d'un ```state``` global dont le composant a accès
+- [ ] Fonction permettant de stocker le score de l'utilisateur sur la base de donnée de Peps
 # Documentation du langage Peps
 Le site et l'application sont encore en cours de développement. Il sera bientôt possible d'essayer une bêta.
 Ce que vous voyez sur la documentation a déjà été réalisé ou est en cours de réalisation.
@@ -187,6 +188,8 @@ print(5 / 7 * 86 + 42 - 8) //affiche 95.42857142857143 sur la console
 #### Type de valeur primitif retourné par le type complexe
 ```number```
 ## Exemples de code
+### Dire bonjour en fonction d'une heure
+Ce programme permet de dire bonjour en fonction d'une heure définie sous la variable ```time```.
 ```
 setVar("time", 17)
 
