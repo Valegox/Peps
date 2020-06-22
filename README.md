@@ -210,3 +210,17 @@ function sayGoodAfternoon(name):
 function sayGoodEvening(name):
 	print("Good evening", getVar("name"))
 ```
+### Afficher le prix de consoles de jeux
+```
+CONSOLE
+
+print("Prix de la Xbox One:", getPrice("Xbox One"))
+print("Prix de la PS 5:", getPrice("PlayStation 5"))
+
+function getPrice(article):
+	if (getvar("article") == "Xbox One"):
+		return 200
+	else:
+		if (getVar("article") == "PlayStation 5"):
+			return 450
+```
