@@ -21,7 +21,7 @@ Firebase est le service utilisé pour la base de données qui stocke les program
 - [x] Type complexe: ```operation```
 - [x] Fonctions basiques ```setVar()``` et ```getVar()```
 - [x] Pouvoir définir une fonction exécutant du code (type complexe: ```function```)
-- [x] Permettre de retourner une valeur au sein de la fonction à l'aide de ```return```
+- [x] Permettre de retourner une valeur au sein de la fonction à l'aide de ```return()```
 - [x] Accès aux paramètres à l'intérieur d'une fonction définie avec ```getVar()```
 - [x] Fonction basique ```wait()```
 - [x] Conditions ```if()``` ```else```
@@ -139,7 +139,7 @@ Fonction qui exécute du code et retourne une valeur.
 ```
 function myFunctionName(myParameter):
   myCode(getVar("myParameter")) //on considère le paramètre myParameter comme une variable interne à la fonction.
-  return "my value"
+  return("my value")
   
 //ici nous sommes à l'extérieur de la fonction, on ne peut plus récupérer myParameter.
  ```
@@ -225,8 +225,8 @@ print("Prix de la PS 5:", getPrice("PlayStation 5"))
 //cette fonction permet de récupérer le prix d'une console de jeu en fonction de son paramètre article
 function getPrice(article):
 	if (getVar("article") == "Xbox One"): //on vérifie le nom du paramètre article
-		return 200
+		return(200)
 	else:
 		if (getVar("article") == "PlayStation 5"): //ici aussi
-			return 450
+			return(450)
 ```
