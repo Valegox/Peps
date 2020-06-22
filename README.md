@@ -186,7 +186,24 @@ print(5 / 7 * 86 + 42 - 8) //affiche 95.42857142857143 sur la console
 ```
 #### Type de valeur primitif retourné par le type complexe
 ```number```
-## Exemple de code
+## Exemples de code
 ```
-//le code n'est pas encore écrit
+setVar("time", 17)
+
+if (getVar("time") <= 12):
+	sayGoodMorning("Patrick")
+else:
+	if (getVar("time") <= 18):
+		sayGoodAfternoon("Jean")
+	else:
+		sayGoodEvening("Antonio")
+
+function sayGoodMorning(name):
+	print("Good morning", getVar("name"))
+
+function sayGoodAfternoon(name):
+	print("Good afternoon", getVar("name"))
+
+function sayGoodEvening(name):
+	print("Good evening", getVar("name"))
 ```
