@@ -191,7 +191,9 @@ print(5 / 7 * 86 + 42 - 8) //affiche 95.42857142857143 sur la console
 ### Dire bonjour en fonction d'une heure
 Ce programme permet de dire bonjour en fonction d'une heure définie sous la variable ```time```.
 ```
-setVar("time", 17)
+CONSOLE
+
+setVar("time", 17) //définition de la variable time
 
 if (getVar("time") <= 12):
 	sayGoodMorning("Patrick")
@@ -201,12 +203,15 @@ else:
 	else:
 		sayGoodEvening("Antonio")
 
+//cette fonction permet de dire bonjour le matin
 function sayGoodMorning(name):
 	print("Good morning", getVar("name"))
 
+//cette fonction permet de dire bonjour l'après midi
 function sayGoodAfternoon(name):
 	print("Good afternoon", getVar("name"))
 
+//cette fonction permet de dire bonjour le soir
 function sayGoodEvening(name):
 	print("Good evening", getVar("name"))
 ```
@@ -217,10 +222,11 @@ CONSOLE
 print("Prix de la Xbox One:", getPrice("Xbox One"))
 print("Prix de la PS 5:", getPrice("PlayStation 5"))
 
+//cette fonction permet de récupérer le prix d'une console de jeu en fonction de son paramètre article
 function getPrice(article):
-	if (getvar("article") == "Xbox One"):
+	if (getVar("article") == "Xbox One"): //on vérifie le nom du paramètre article
 		return 200
 	else:
-		if (getVar("article") == "PlayStation 5"):
+		if (getVar("article") == "PlayStation 5"): //ici aussi
 			return 450
 ```
