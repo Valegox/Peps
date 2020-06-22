@@ -25,7 +25,7 @@ Firebase est le service utilisé pour la base de données qui stocke les program
 - [x] Accès aux paramètres à l'intérieur d'une fonction définie avec ```getVar()```
 - [x] Fonction basique ```wait()```
 - [x] Conditions ```if()``` ```else```
-- [ ] Commentaires ```//```
+- [x] Commentaires ```//```
 - [ ] Fonction basique de boucle: ```for()```
 - [ ] Type ```array``` (tableau) et fonctions basiques associées
 - [ ] Type ```map``` (dictionnaire) et fonctions basiques associées
