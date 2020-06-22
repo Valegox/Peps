@@ -1,5 +1,5 @@
 # Peps
-Peps est un projet en développement depuis le 16 avril 2020. L'objectif est de permettre à n'importe qui de développer facilement des jeux casual sur smartphone.
+Peps est un projet en développement depuis le 16 juin 2020. L'objectif est de permettre à n'importe qui de développer facilement des jeux casual sur smartphone.
 Le code est écrit depuis un site, et le développeur peut essayer simultanément sa création sur son téléphone, depuis l'application Peps.
 Une fois qu'une première version du jeu est terminée, il est possible de la publier sur la plateforme Peps afin que n'importe qui puisse l'essayer et la commenter. Les joueurs n'ont pas besoin de les installer, les jeux se jouent en ligne.
 ## Informations techniques
