@@ -98,37 +98,6 @@ wait(number delay, function functionTriggeredAfterWait)
   - ```delay```: le délai d’attente avant exécution de la fonction en millisecondes,
   - ```functionTriggeredAfterWait```: la fonction exécutée après le délai choisi.
 - Type de valeur retournée par la fonction: ```undefined```.
-## Conditions
-### if
-#### Description
-Le contenu du ```if()``` est exécuté si le paramètre renvoie la valeur ```true```.
-#### Forme
-```
-if (boolean myCondition):
-  myCodeExecutedOnlyIfMyConditionIsTrue()
-```
-#### Exemple
-```
-if (2 + 2 == 4):
-  print("2 + 2 est égal à 4")
-```
-### else
-#### Description
-Le contenu du ```else``` correspond à "sinon". Il est toujours précédé d'un ```if()```.
-#### Forme
-```
-if (boolean myCondition):
-  myCodeExecutedOnlyIfMyConditionIsTrue()
-else:
-  myCodeExecutedOnlyIfMyConditionIsFalse()
-```
-#### Exemple
-```
-if (2+2 == 5):
-  print("2 + 2 est égal à 5") //cette ligne ne sera pas exécutée
-else:
-  print("2 + 2 n'est pas égal à 5") //cette ligne sera exécutée
-```
 ## Types complexes
 Les types complexes sont les types qui retournent une ou plusieurs valeurs dont le type est simple.
 ### function
@@ -187,11 +156,66 @@ print(5 / 7 * 86 + 42 - 8) //affiche 95.42857142857143 sur la console
 ```
 #### Type de valeur primitif retourné par le type complexe
 ```number```
+## Conditions
+### if
+#### Description
+Le contenu du ```if()``` est exécuté si le paramètre renvoie la valeur ```true```.
+#### Forme
+```
+if (boolean myCondition):
+  myCodeExecutedOnlyIfMyConditionIsTrue()
+```
+#### Exemple
+```
+if (2 + 2 == 4):
+  print("2 + 2 est égal à 4")
+```
+### else
+#### Description
+Le contenu du ```else``` correspond à "sinon". Il est toujours précédé d'un ```if()```.
+#### Forme
+```
+if (boolean myCondition):
+  myCodeExecutedOnlyIfMyConditionIsTrue()
+else:
+  myCodeExecutedOnlyIfMyConditionIsFalse()
+```
+#### Exemple
+```
+if (2+2 == 5):
+  print("2 + 2 est égal à 5") //cette ligne ne sera pas exécutée
+else:
+  print("2 + 2 n'est pas égal à 5") //cette ligne sera exécutée
+```
+## Boucles
+### While
+#### Description
+La boucle ```while``` correspond au souhait d'exécuter du code tant qu'une valeur booléenne reste ```true```. La valeur en question doit donc devenir ```false``` à un moment donné si l'on ne veut pas que la boucle soit continue indéfiniment et que le code devienne inutilisable.
+#### Forme
+```
+while (boolean myCondition):
+	myCodeExecutedWhileMyConditionIsTrue()
+
+myCodeExecutedOnceMyConditionIsFalse()
+```
+#### Exemple
+Compter jusqu'à 10:
+```
+setVar("count", 0)
+
+print("Le comptage va commencer.")
+
+while (getVar("count") <= 10):
+	print(getVar("count"))
+	setVar("count", getVar("count")+1)
+
+print("Le comptage est terminé.")
+```
 ## Exemples de code
 ### Dire bonjour en fonction d'une heure
 Ce programme permet de dire bonjour en fonction d'une heure définie sous la variable ```time```.
 ```
-CONSOLE
+CONSOLE //doit être placé au début du code afin d'afficher la console sur l'application
 
 setVar("time", 17) //définition de la variable time
 
@@ -217,7 +241,7 @@ function sayGoodEvening(name):
 ```
 ### Afficher le prix de consoles de jeux
 ```
-CONSOLE
+CONSOLE //doit être placé au début du code afin d'afficher la console sur l'application
 
 print("Prix de la Xbox One:", getPrice("Xbox One"))
 print("Prix de la PS 5:", getPrice("PlayStation 5"))
@@ -232,7 +256,7 @@ function getPrice(article):
 ```
 ### Faire un compte à rebours
 ```
-CONSOLE
+CONSOLE //doit être placé au début du code afin d'afficher la console sur l'application
 
 print("Début du compte à rebours")
 
