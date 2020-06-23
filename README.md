@@ -26,7 +26,7 @@ Firebase est le service utilisé pour la base de données qui stocke les program
 - [x] Fonction basique ```wait()```
 - [x] Conditions ```if()``` ```else```
 - [x] Commentaires ```//```
-- [ ] Fonction basique de boucle: ```while()```
+- [x] Fonction basique de boucle: ```while()```
 - [ ] Type ```array``` (tableau) et fonctions basiques associées
 - [ ] Type ```map``` (dictionnaire) et fonctions basiques associées
 ### Compilateur évolué
@@ -191,6 +191,7 @@ else:
 ### While
 #### Description
 La boucle ```while``` correspond au souhait d'exécuter du code tant qu'une valeur booléenne reste ```true```. La valeur en question doit donc devenir ```false``` à un moment donné si l'on ne veut pas que la boucle soit continue indéfiniment et que le code devienne inutilisable.
+Il est impossible d'utiliser ```wait()``` ou ```return()``` à l'intérieur d'un ```while()```.
 #### Forme
 ```
 while (boolean myCondition):
