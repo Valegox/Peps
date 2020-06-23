@@ -26,7 +26,7 @@ Firebase est le service utilisé pour la base de données qui stocke les program
 - [x] Fonction basique ```wait()```
 - [x] Conditions ```if()``` ```else```
 - [x] Commentaires ```//```
-- [ ] Fonction basique de boucle: ```for()```
+- [ ] Fonction basique de boucle: ```while()```
 - [ ] Type ```array``` (tableau) et fonctions basiques associées
 - [ ] Type ```map``` (dictionnaire) et fonctions basiques associées
 ### Compilateur évolué
@@ -229,4 +229,18 @@ function getPrice(article):
 	else:
 		if (getVar("article") == "PlayStation 5"): //ici aussi
 			return(450)
+```
+### Faire un compte à rebours
+```
+CONSOLE
+
+print("Début du compte à rebours")
+
+setVar("i", 10)
+
+while (getVar("i") >= 0): //tant que i est supérieur ou égal à 0
+	print(getVar("i"))
+	setVar("i", getVar("i")-1) //on retire 1 à i
+
+print("BONNE ANNÉE !")
 ```
