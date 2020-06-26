@@ -9,9 +9,10 @@ Firebase est le service utilisé pour la base de données qui stocke les program
 ## Todolist
 ### Support
 - [x] Initialisation + Interfaces de base + liaison de l'application au site (frontend & database)
-- [ ] Interface du site
+- [x] Interface du site
 - [ ] Interface de l'application
 - [ ] Système d'authentification avec projets et scores dédiés à chaque compte
+- [ ] Documentation
 ### Langage de programmation: bases algorithmiques
 - [x] Lecture algorithmique et envoi du futur code Peps sur la base de données
 - [x] Affichage de la console lorsque le code commence par le mot-clé CONSOLE
@@ -30,9 +31,8 @@ Firebase est le service utilisé pour la base de données qui stocke les program
 - [ ] Type ```array``` (tableau) et fonctions basiques associées
 - [ ] Type ```map``` (dictionnaire) et fonctions basiques associées
 ### Compilateur évolué
+- [x] Représentation hierarchique et intéractive des composants sur l'interface de programmation
 - [ ] Séparation du code en plusieurs composants + suite algorithmique des composants
-- [ ] Représentation hierarchique et intéractive des composants sur l'interface de programmation
-- [ ] Interface de la side bar
 - [ ] Possibilité de rendre un composant visible à travers une image ou un objet stylisable en CSS
 - [ ] Fonctions basiques associées au placement / déplacement d'un composant visible
 - [ ] Evenements associés au cycle de vie d'un composant (apparition / disparition)
