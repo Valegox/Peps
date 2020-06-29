@@ -1,47 +1,10 @@
 # Peps
-Peps est un projet en développement depuis le 16 juin 2020. L'objectif est de permettre à n'importe qui de développer facilement des jeux casual sur smartphone.
-Le code est écrit depuis un site, et le développeur peut essayer simultanément sa création sur son téléphone, depuis l'application Peps.
-Une fois qu'une première version du jeu est terminée, il est possible de la publier sur la plateforme Peps afin que n'importe qui puisse l'essayer et la commenter. Les joueurs n'ont pas besoin de les installer, les jeux se jouent en ligne.
-Une petite idée de l'interface du site: ![alt website](https://github.com/PastequeBuild/Peps/blob/master/website.png?raw=true)
-## Informations techniques
-Peps est codé en Javascript avec les frameworks React et React-Native.
-Le compileur de Peps se trouve sur l'application.
-Firebase est le service utilisé pour la base de données qui stocke les programmes ainsi que les données des utilisateurs.
-## Todolist
-### Support
-- [x] Initialisation + Interfaces de base + liaison de l'application au site (frontend & database)
-- [x] Interface du site
-- [ ] Interface de l'application
-- [ ] Système d'authentification avec projets et scores dédiés à chaque compte
-- [ ] Documentation
-### Langage de programmation: bases algorithmiques
-- [x] Lecture algorithmique et envoi du futur code Peps sur la base de données
-- [x] Affichage de la console lorsque le code commence par le mot-clé CONSOLE
-- [x] Initialisation du compileur et des types primitifs
-- [x] Fonction basique ```print()```
-- [x] Type complexe: ```equality```
-- [x] Type complexe: ```operation```
-- [x] Fonctions basiques ```setVar()``` et ```getVar()```
-- [x] Pouvoir définir une fonction exécutant du code (type complexe: ```function```)
-- [x] Permettre de retourner une valeur au sein de la fonction à l'aide de ```return()```
-- [x] Accès aux paramètres à l'intérieur d'une fonction définie avec ```getVar()```
-- [x] Fonction basique ```wait()```
-- [x] Conditions ```if()``` ```else```
-- [x] Commentaires ```//```
-- [x] Fonction basique de boucle: ```while()```
-- [ ] Type ```array``` (tableau) et fonctions basiques associées
-- [ ] Type ```map``` (dictionnaire) et fonctions basiques associées
-### Compilateur évolué
-- [x] Représentation hierarchique et intéractive des composants sur l'interface de programmation
-- [ ] Séparation du code en plusieurs composants + suite algorithmique des composants
-- [ ] Possibilité de rendre un composant visible à travers une image ou un objet stylisable en CSS
-- [ ] Fonctions basiques associées au placement / déplacement d'un composant visible
-- [ ] Evenements associés au cycle de vie d'un composant (apparition / disparition)
-- [ ] Evenements associés à l'intéraction de l'utilisateur (lorsqu'on touche l'écran, etc)
-- [ ] Mise en place d'un ```state``` (état) associé à chaque composant
-- [ ] Possibilité de créer des ```state``` globaux qu'une liste de composant définie peut récupérer / mettre à jour
-- [ ] Evenement associé à une mise à jour du composant, causée par la mise à jour du ```state``` du composant ou d'un ```state``` global dont le composant a accès
-- [ ] Fonction permettant de stocker le score de l'utilisateur sur la base de donnée de Peps
+Peps est un projet en développement depuis le 16 juin 2020. L'objectif est de permettre à n'importe qui de développer facilement des casual games pour appareils iOS et Android.  
+Le code est écrit depuis un site. Le développeur peut essayer simultanément sa création sur son téléphone via l'application Peps.  
+On peut publier ses jeux sur la plateforme Peps afin que n'importe qui puisse l'essayer.
+
+Une petite idée de l'interface du site:
+![alt website](https://github.com/PastequeBuild/Peps/blob/master/website.png?raw=true)
 # Documentation du langage Peps
 Le site et l'application sont encore en cours de développement. Il sera bientôt possible d'essayer une bêta.
 Ce que vous voyez sur la documentation a déjà été réalisé ou est en cours de réalisation.
@@ -270,3 +233,42 @@ while (getVar("i") >= 0): //tant que i est supérieur ou égal à 0
 
 print("BONNE ANNÉE !")
 ```
+# Todolist
+### Support
+- [x] Initialisation + Interfaces de base + liaison de l'application au site (frontend & database)
+- [x] Interface du site
+- [ ] Interface de l'application
+- [ ] Système d'authentification avec projets et scores dédiés à chaque compte
+- [ ] Documentation
+### Langage de programmation: bases algorithmiques
+- [x] Lecture algorithmique et envoi du futur code Peps sur la base de données
+- [x] Affichage de la console lorsque le code commence par le mot-clé CONSOLE
+- [x] Initialisation du compileur et des types primitifs
+- [x] Fonction basique ```print()```
+- [x] Type complexe: ```equality```
+- [x] Type complexe: ```operation```
+- [x] Fonctions basiques ```setVar()``` et ```getVar()```
+- [x] Pouvoir définir une fonction exécutant du code (type complexe: ```function```)
+- [x] Permettre de retourner une valeur au sein de la fonction à l'aide de ```return()```
+- [x] Accès aux paramètres à l'intérieur d'une fonction définie avec ```getVar()```
+- [x] Fonction basique ```wait()```
+- [x] Conditions ```if()``` ```else```
+- [x] Commentaires ```//```
+- [x] Fonction basique de boucle: ```while()```
+- [ ] Type ```array``` (tableau) et fonctions basiques associées
+- [ ] Type ```map``` (dictionnaire) et fonctions basiques associées
+### Compilateur évolué
+- [x] Représentation hierarchique et intéractive des composants sur l'interface de programmation
+- [ ] Séparation du code en plusieurs composants + suite algorithmique des composants
+- [ ] Possibilité de rendre un composant visible à travers une image ou un objet stylisable en CSS
+- [ ] Fonctions basiques associées au placement / déplacement d'un composant visible
+- [ ] Evenements associés au cycle de vie d'un composant (apparition / disparition)
+- [ ] Evenements associés à l'intéraction de l'utilisateur (lorsqu'on touche l'écran, etc)
+- [ ] Mise en place d'un ```state``` (état) associé à chaque composant
+- [ ] Possibilité de créer des ```state``` globaux qu'une liste de composant définie peut récupérer / mettre à jour
+- [ ] Evenement associé à une mise à jour du composant, causée par la mise à jour du ```state``` du composant ou d'un ```state``` global dont le composant a accès
+- [ ] Fonction permettant de stocker le score de l'utilisateur sur la base de donnée de Peps
+## Informations techniques
+Peps est codé en Javascript avec les frameworks React et React-Native.
+Le compileur de Peps se trouve sur l'application.
+Firebase est le service utilisé pour la base de données qui stocke les programmes ainsi que les données des utilisateurs.
