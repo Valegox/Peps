@@ -176,6 +176,54 @@ while (getVar("count") <= 10):
 
 print("Le comptage est terminé.")
 ```
+## Evenements
+Le code d'un bloc événement n'est exécuté que lorsque celui-ci se réalise.
+### Forme
+```
+on myEvent:
+	myCode()
+```
+### Exemple
+Dire "Hello" lorsque l'on appuie sur le composant dans lequel le code se trouve.
+```
+on touch:
+	print("Hello")
+```
+### Liste des types d'événements
+- ```touch```
+## Styliser ses composants dynamiquement
+Il est possible de styliser ses composants de manière statique depuis l'interface de développement. Néanmmoins, il est possible que vous vouliez changer des particularités visuelles depuis le code.
+### Forme
+```
+SetStyle(string property, anyType value)
+```
+### Exemple
+Admettons que vous vouliez définir la couleur de fond en rouge dès que l'on appuie sur le composant.
+```
+on touch:
+	SetStyle("backgroundColor", "red")
+```
+### Liste des propriétés de style
+#### Composants "aire"
+- ```backgroundColor```: couleur de fond
+- ```opacity```: opacité
+- ```height```: hauteur
+- ```width```: largeur
+- ```borderWidth```: épaisseur des bordures
+- ```margin```: marge extérieure aux bordures
+- ```padding```: marge intérieure aux bordures
+- ```borderRadius```: arrondi aux angles
+- ```flexDirection```: direction des composants enfants
+- ```flexWrap```: comportement des composants enfants lorsqu'ils dépassent le composant parent
+#### Composants "texte"
+- ```textContent```: texte
+- ```color```: couleur
+- ```fontSize```: taille du texte
+- ```fontWeight```: épaisseur du texte
+- ```textDecorationLine```: soulignage
+- ```fontStyle```: italique
+- ```fontFamily```: police d'écriture
+- ```margin```: marge extérieure aux bordures
 ## Exemples de code
 ### Dire bonjour en fonction d'une heure
 Ce programme permet de dire bonjour en fonction d'une heure définie sous la variable ```time```.
