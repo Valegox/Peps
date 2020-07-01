@@ -259,13 +259,11 @@ print("BONNE ANNÉE !")
 - [ ] Type ```map``` (dictionnaire) et fonctions basiques associées
 ### Compilateur évolué
 - [x] Représentation hierarchique et intéractive des composants sur l'interface de programmation
-- [ ] Séparation du code en plusieurs composants + suite algorithmique des composants
-- [ ] Possibilité de rendre un composant visible à travers une image ou un objet stylisable en CSS
+- [x] Séparation du code en plusieurs composants + suite algorithmique des composants
+- [x] Possibilité de rendre un composant visible à travers une image ou un objet stylisable
+- [ ] Evenements associés à l'intéraction de l'utilisateur (lorsqu'on touche l'écran)
 - [ ] Fonctions basiques associées au placement / déplacement d'un composant visible
-- [ ] Evenements associés au cycle de vie d'un composant (apparition / disparition)
-- [ ] Evenements associés à l'intéraction de l'utilisateur (lorsqu'on touche l'écran, etc)
-- [ ] Mise en place d'un ```state``` (état) associé à chaque composant
-- [ ] Possibilité de créer des ```state``` globaux qu'une liste de composant définie peut récupérer / mettre à jour
+- [ ] Possibilité de créer des variables globales qu'une liste de composant définie peut récupérer / mettre à jour
 - [ ] Evenement associé à une mise à jour du composant, causée par la mise à jour du ```state``` du composant ou d'un ```state``` global dont le composant a accès
 - [ ] Fonction permettant de stocker le score de l'utilisateur sur la base de donnée de Peps
 ## Informations techniques
