@@ -261,7 +261,7 @@ print("BONNE ANNÉE !")
 - [x] Représentation hierarchique et intéractive des composants sur l'interface de programmation
 - [x] Séparation du code en plusieurs composants + suite algorithmique des composants
 - [x] Possibilité de rendre un composant visible à travers une image ou un objet stylisable
-- [ ] Evenements associés à l'intéraction de l'utilisateur (lorsqu'on touche l'écran)
+- [x] Evenements associés à l'intéraction de l'utilisateur (lorsqu'on touche l'écran)
 - [ ] Pouvoir modifier du contenu textuel et du style depuis le code
 - [ ] Fonctions basiques associées au placement / déplacement d'un composant visible
 - [ ] Possibilité de créer des variables globales qu'une liste de composant définie peut récupérer / mettre à jour
