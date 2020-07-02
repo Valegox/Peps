@@ -334,7 +334,7 @@ print("BONNE ANNÉE !")
 - [x] Séparation du code en plusieurs composants + suite algorithmique des composants
 - [x] Possibilité de rendre un composant visible à travers une image ou un objet stylisable
 - [x] Evenements associés à l'intéraction de l'utilisateur (lorsqu'on touche l'écran)
-- [ ] Pouvoir modifier du contenu textuel et du style depuis le code
+- [x] Pouvoir modifier du contenu textuel et du style depuis le code
 - [ ] Fonctions basiques associées au placement / déplacement d'un composant visible
 - [ ] Possibilité de créer des variables globales qu'une liste de composant définie peut récupérer / mettre à jour
 - [ ] Evenement associé à une mise à jour du composant, causée par la mise à jour du ```state``` du composant ou d'un ```state``` global dont le composant a accès
