@@ -176,6 +176,26 @@ while (getVar("count") <= 10):
 
 print("Le comptage est terminé.")
 ```
+## Composants
+Un jeu codé en Peps regroupe plusieurs composants. Un composant peut être visible ou invisible. Il existe deux types de composants visibles:
+- Les aires
+- Les textes
+
+
+On peut styliser ces composants depuis l'interface du site, mais aussi y inclure du code. Les composants sont structurés hiérarchiquement, on parle de composant parent et de composant enfant.
+### Activer et désactiver un composant
+Pour qu'un composant vive, il faut que son parent l'active à travers cette fonction basique:
+```
+enable(string componentName)
+```
+On peut à tout moment tuer le composant de cette manière:
+```
+disable(string componentName)
+```
+Seul le parent d'un composant peut tuer son enfant. Lorsqu'un composant est tué, l'ensemble de ses enfants le sont aussi.
+Un composant mort n'exécute plus de code, et devient invisible s'il a été paramétré préalablement comme visible.  
+### Le composant Main
+```Main``` est un composant défini par défaut au sommet de la chaîne hierarchique des composants. Il n'a donc pas de parent, et tous les composants du jeu sont ses enfants. ```Main``` est activé dès la compilation. Il est impossible de le tuer. C'est à l'intérieur de ce composant que l'on peut afficher la console à l'aide du mot-clé ```CONSOLE```, placé au tout début du code.
 ## Evenements
 Le code d'un bloc événement n'est exécuté que lorsque celui-ci se réalise.
 ### Forme
@@ -213,7 +233,9 @@ on touch:
 - ```margin```: marge extérieure aux bordures
 - ```padding```: marge intérieure aux bordures
 - ```borderRadius```: arrondi aux angles
-- ```flexDirection```: direction des composants enfants
+- ```alignDirection```: direction des composants enfants
+- ```alignHorizontal```: alignement des composants enfants sur l'axe horizontal
+- ```alignVertical```: alignement des composants enfants sur l'axe vertical
 - ```flexWrap```: comportement des composants enfants lorsqu'ils dépassent le composant parent
 #### Composants "texte"
 - ```textContent```: texte
