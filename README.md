@@ -338,7 +338,7 @@ print("BONNE ANNÉE !")
 - [x] Pouvoir modifier du contenu textuel et du style depuis le code
 - [ ] Fonctions basiques associées au placement / déplacement d'un composant visible
 - [ ] Possibilité de créer des variables globales qu'une liste de composant définie peut récupérer / mettre à jour
-- [ ] Evenement associé à une mise à jour du composant, causée par la mise à jour du ```state``` du composant ou d'un ```state``` global dont le composant a accès
+- [ ] Evenement associé à une mise à jour du composant, causée par la modification d'une variable privée ou globale dont le composant est concerné
 - [ ] Fonction permettant de stocker le score de l'utilisateur sur la base de donnée de Peps
 ## Informations techniques
 Peps est codé en Javascript avec les frameworks React et React-Native.
