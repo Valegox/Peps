@@ -206,11 +206,12 @@ on myEvent:
 	myCode()
 ```
 ### Exemple
-Dire "Hello" lorsque l'on appuie sur le composant dans lequel le code se trouve.
+Dire "Hello" lorsque l'on appuie sur le composant visible dans lequel le code se trouve.
 ```
 on touch:
 	print("Hello")
 ```
+Si le composant est invisible, il n'y aura pas d'erreur mais le ```print("hello")``` ne sera jamais appelé car il est impossible d'appuyer sur le composant.
 ### Liste des types d'événements
 - ```touch```
 ## Styliser ses composants dynamiquement
