@@ -1,5 +1,5 @@
 # Peps
-Peps est un projet en développement depuis le 16 juin 2020. L'objectif est de permettre à n'importe qui de développer facilement des casual games pour appareils iOS et Android.  
+Peps est un projet en développement depuis le 16 juin 2020. L'objectif est de permettre à n'importe qui de développer facilement des jeux pour appareils iOS et Android.  
 Le code est écrit depuis un site. Le développeur peut essayer simultanément sa création sur son téléphone via l'application Peps.  
 On peut publier ses jeux sur la plateforme Peps afin que n'importe qui puisse l'essayer.
 
@@ -122,6 +122,59 @@ print(5 / 7 * 86 + 42 - 8) //affiche 95.42857142857143 sur la console
 ```
 #### Type de valeur primitif retourné par le type complexe
 ```number```
+### array (ou list)
+#### Description
+Le type ```array``` constitue ce qu'on appelle une liste de valeurs ```anyType```.
+#### Exemples
+```
+print([5, "hello", true])
+```
+Une liste peut contenir elle même une liste:
+```
+print([2, ["test", 0], false])
+```
+On peut récupérer un élément précis d'une liste à partir de sa position, le premier élément correspondant à la position 1.
+Pour cela on utilise le caractère @ suivi de la position.
+```
+print([9, 42, 17]@2) //affiche 42
+```
+#### Fonctions associées au type
+##### size()
+La fonction ```size()``` retourne la taille de son paramètre de type ```array```.
+###### Forme
+```
+size(array parameter)
+```
+###### Exemple
+```
+print(size([5, 10])) //affiche 2 sur la console car il y a deux éléments dans la liste
+```
+##### add()
+La fonction ```add()``` ajoute une valeur a la fin d'une liste stockée en tant que variable.
+###### Forme
+```
+add(string varNameOfArray, anyType valueToAdd)
+```
+###### Exemple
+```
+setVar("myArray", [1, 2])
+print(getVar("myArray")) //affiche [1, 2] sur la console
+add("myArray", 3)
+print(getVar("myArray")) //affiche [1, 2, 3] sur la console
+```
+##### remove()
+La fonction ```remove()``` retire la valeur d'une liste à une position donnée et modifie ainsi la taille de la liste.
+###### Forme
+```
+remove(string varNameOfArray, anyType valueToRemove)
+```
+###### Exemple
+```
+setVar("myArray", [1, 8, 16])
+print(getVar("myArray")) //affiche [1, 8, 16] sur la console
+remove("myArray", 2)
+print(getVar("myArray")) //affiche [1, 16] sur la console
+```
 ## Conditions
 ### if
 #### Description
@@ -310,7 +363,7 @@ print("BONNE ANNÉE !")
 ### Support
 - [x] Initialisation + Interfaces de base + liaison de l'application au site (frontend & database)
 - [x] Interface du site
-- [ ] Interface de l'application
+- [x] Interface de l'application
 - [ ] Système d'authentification avec projets et scores dédiés à chaque compte
 - [ ] Documentation
 ### Langage de programmation: bases algorithmiques
