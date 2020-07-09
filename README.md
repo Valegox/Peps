@@ -162,19 +162,6 @@ print(getVar("myArray")) //affiche [1, 2] sur la console
 add("myArray", 3)
 print(getVar("myArray")) //affiche [1, 2, 3] sur la console
 ```
-##### remove()
-La fonction ```remove()``` retire la valeur d'une liste à une position donnée et modifie ainsi la taille de la liste.
-###### Forme
-```
-remove(string varNameOfArray, anyType valueToRemove)
-```
-###### Exemple
-```
-setVar("myArray", [1, 8, 16])
-print(getVar("myArray")) //affiche [1, 8, 16] sur la console
-remove("myArray", 2)
-print(getVar("myArray")) //affiche [1, 16] sur la console
-```
 ## Conditions
 ### if
 #### Description
