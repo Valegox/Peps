@@ -38,23 +38,6 @@ print(anyType param1,  anyType param2, ..., anyType paramN)
 - Description: Affiche des valeurs sur la console.
 - Paramètres: Autant de paramètres que l’on veut de n’importe quel type.
 - Type de valeur retourné par la fonction: ```undefined```.
-### Définir une variable
-```
-setVar(string variableName, anyType variableValue)
-```
-- Description: Défini une variable.
-- Paramètres:
-  - ```variableName```: le nom de la variable que l’on veut définir (si ce nom de variable existe déjà l’ancienne valeur sera écrasée),
-  - ```variableValue```: la valeur de la variable.
-- Type de valeur retourné par la fonction: ```undefined```
-### Récupérer une variable
-```
-getVar(string variableName)
-```
-- Description: Récupère la valeur d’une variable.
-- Paramètres:
-  - ```variableName```: le nom de la variable dont on veut récupérer la valeur.
-- Type de valeur retournée par la fonction: ```anyType``` (type de la valeur de la variable).
 ### Attendre avant d'exécuter une fonction
 ```
 wait(number delay, function functionTriggeredAfterWait)
@@ -64,6 +47,18 @@ wait(number delay, function functionTriggeredAfterWait)
   - ```delay```: le délai d’attente avant exécution de la fonction en millisecondes,
   - ```functionTriggeredAfterWait```: la fonction exécutée après le délai choisi.
 - Type de valeur retournée par la fonction: ```undefined```.
+## Variables
+### Définition d'une variable
+```
+varName =  value
+```
+```varName``` étant le nom de la variable, ```value``` étant sa valeur (de type ```anyType```)
+### Récupération d'une variable
+Il suffit de taper le nom de la variable là où l'on veut récupérer sa valeur.
+```
+message = "Bonjour"
+print(message) //affiche "Bonjour" sur la console
+```
 ## Types complexes
 Les types complexes sont les types qui retournent une ou plusieurs valeurs dont le type est simple.
 ### function
@@ -258,13 +253,13 @@ Si le composant est invisible, il n'y aura pas d'erreur mais le ```print("hello"
 Il est possible de styliser ses composants de manière statique depuis l'interface de développement. Néanmmoins, il est possible que vous vouliez changer des particularités visuelles depuis le code.
 ### Forme
 ```
-SetStyle(string property, anyType value)
+setStyle(string property, anyType value)
 ```
 ### Exemple
 Admettons que vous vouliez définir la couleur de fond en rouge dès que l'on appuie sur le composant.
 ```
 on touch:
-	SetStyle("backgroundColor", "red")
+	setStyle("backgroundColor", "red")
 ```
 ### Liste des propriétés de style
 #### Composants "aire"
