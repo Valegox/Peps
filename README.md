@@ -42,7 +42,7 @@ Les types primitifs sont les types les plus simples que l’on puisse trouver en
 ### undefined
 - Description: Type représentant une valeur indéfinie. Valeur retournée lorsque l’élément demandé n’a pas été défini, ou lorsque la variable a été définie comme indéfinie.
 - Exemple: ```undefined```
-## Fonctions basiques:
+## Fonctions basiques
 ### Afficher des valeurs sur la console
 ```
 print(anyType param1,  anyType param2, ..., anyType paramN)
