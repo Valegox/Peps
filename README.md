@@ -1,12 +1,19 @@
+![alt logo](https://github.com/PastequeBuild/Peps/blob/master/logo.png?raw=true)
 # Peps
 Peps est un projet en développement depuis le 16 juin 2020. L'objectif est de permettre à n'importe qui de développer facilement des jeux pour appareils iOS et Android.  
 Le code est écrit depuis un site. Le développeur peut essayer simultanément sa création sur son téléphone via l'application Peps.  
 On peut publier ses jeux sur la plateforme Peps afin que n'importe qui puisse l'essayer.
 
-Une petite idée de l'interface du site:
+Interface du site:
 
 
 ![alt website](https://github.com/PastequeBuild/Peps/blob/master/website.png?raw=true)
+
+Interface de l'application (Doodle Jump étant un exemple):
+
+
+![alt app](https://github.com/PastequeBuild/Peps/blob/master/app.png?raw=true)
+
 # Documentation du langage Peps
 Le site et l'application sont encore en cours de développement. Il sera bientôt possible d'essayer une bêta.
 Ce que vous voyez sur la documentation a déjà été réalisé ou est en cours de réalisation.
@@ -347,7 +354,7 @@ print("BONNE ANNÉE !")
 - [x] Interface du site
 - [x] Interface de l'application
 - [ ] Système d'authentification avec projets et scores dédiés à chaque compte
-- [ ] Documentation
+- [ ] Documentation sur un site dédié
 ### Langage de programmation: bases algorithmiques
 - [x] Lecture algorithmique et envoi du futur code Peps sur la base de données
 - [x] Affichage de la console lorsque le code commence par le mot-clé CONSOLE
@@ -363,7 +370,7 @@ print("BONNE ANNÉE !")
 - [x] Conditions ```if()``` ```else```
 - [x] Commentaires ```//```
 - [x] Fonction basique de boucle: ```while()```
-- [ ] Type ```array``` (tableau) et fonctions basiques associées
+- [x] Type ```array``` (tableau) et fonctions basiques associées
 - [ ] Type ```map``` (dictionnaire) et fonctions basiques associées
 ### Compilateur évolué
 - [x] Représentation hierarchique et intéractive des composants sur l'interface de programmation
