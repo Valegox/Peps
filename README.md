@@ -1,5 +1,9 @@
-![alt logo](https://github.com/PastequeBuild/Peps/blob/master/logo.png?raw=true)
 # Peps
+
+<p align="center">
+	<img width="250" src="https://github.com/PastequeBuild/Peps/blob/master/logo.png?raw=true">
+</p>
+
 Peps est un projet en développement depuis le 16 juin 2020. L'objectif est de permettre à n'importe qui de développer facilement des jeux pour appareils iOS et Android.  
 Le code est écrit depuis un site. Le développeur peut essayer simultanément sa création sur son téléphone via l'application Peps.  
 On peut publier ses jeux sur la plateforme Peps afin que n'importe qui puisse l'essayer.
@@ -11,8 +15,9 @@ Interface du site:
 
 Interface de l'application (Doodle Jump étant un exemple):
 
-
-![alt app](https://github.com/PastequeBuild/Peps/blob/master/app.png?raw=true)
+<p align="center">
+	<img width="250" src="https://github.com/PastequeBuild/Peps/blob/master/app.png?raw=true">
+</p>
 
 # Documentation du langage Peps
 Le site et l'application sont encore en cours de développement. Il sera bientôt possible d'essayer une bêta.
