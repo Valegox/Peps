@@ -386,6 +386,7 @@ print("BONNE ANNÉE !")
 - [ ] Fonctions basiques associées au placement / déplacement d'un composant visible
 - [ ] Possibilité de créer des variables globales qu'une liste de composant définie peut récupérer / mettre à jour
 - [ ] Evenement associé à une mise à jour du composant, causée par la modification d'une variable privée ou globale dont le composant est concerné
+- [ ] Pouvoir définir une image de fond à un composant aire
 - [ ] Fonction permettant de stocker le score de l'utilisateur sur la base de donnée de Peps
 ## Informations techniques
 Peps est codé en Javascript avec les frameworks React et React-Native.
