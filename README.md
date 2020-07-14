@@ -13,6 +13,8 @@ Interface du site:
 
 ![alt website](https://github.com/PastequeBuild/Peps/blob/master/website.png?raw=true)
 
+![alt website](https://github.com/PastequeBuild/Peps/blob/master/website_style.png?raw=true)
+
 Interface de l'application (Doodle Jump étant un exemple):
 
 <p align="center">
