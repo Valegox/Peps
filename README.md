@@ -391,10 +391,10 @@ print("BONNE ANNÉE !")
 - [x] Evenements associés à l'intéraction de l'utilisateur (lorsqu'on touche l'écran)
 - [x] Pouvoir modifier du contenu textuel et du style depuis le code
 - [ ] Ajout des propriétés de style correspondant au type de position et aux coordonnées X, Y et Z d'un composant
-- [ ] Possibilité de créer une instance de composant (avec ```enable()```)
+- [ ] Possibilité de créer une instance de composant avec ```enable()``` et l'objet dynamique ```parent``` (équivalent props)
 - [ ] Possibilité de déplacer ou dupliquer un composant depuis l'interface
-- [ ] Possibilité de créer des variables globales qu'une liste de composant définie peut récupérer / mettre à jour
-- [ ] Evenement associé à une mise à jour du composant, causée par la modification d'une variable privée ou globale dont le composant est concerné
+- [ ] objet dynamique ```state``` (pour un composant), ```globalState``` (pour tous les composants)
+- [ ] Evénements ```on stateUpdate```, ```on globalStateUpdate```, et ```on parentUpdate```
 - [ ] Ajout de la propriété de style correspondant à l'image de fond d'un composant aire
 - [ ] Fonction permettant de stocker le score de l'utilisateur sur la base de données de Peps
 ## Informations techniques
