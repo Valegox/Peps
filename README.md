@@ -84,7 +84,7 @@ Fonction qui exécute du code et retourne une valeur.
 ##### Définition d'une fonction
 ```
 function myFunctionName(myParameter):
-  myCode(getVar("myParameter")) //on considère le paramètre myParameter comme une variable interne à la fonction.
+  myCode(myParameter) //on considère le paramètre myParameter comme une variable interne à la fonction.
   return("my value")
   
 //ici nous sommes à l'extérieur de la fonction, on ne peut plus récupérer myParameter.
@@ -168,10 +168,10 @@ add(string varNameOfArray, anyType valueToAdd)
 ```
 ###### Exemple
 ```
-setVar("myArray", [1, 2])
-print(getVar("myArray")) //affiche [1, 2] sur la console
+myArray = [1, 2]
+print(myArray) //affiche [1,2] sur la console
 add("myArray", 3)
-print(getVar("myArray")) //affiche [1, 2, 3] sur la console
+print(myArray) //affiche [1,2,3] sur la console
 ```
 ## Conditions
 ### if
@@ -219,13 +219,13 @@ myCodeExecutedOnceMyConditionIsFalse()
 #### Exemple
 Compter jusqu'à 10:
 ```
-setVar("count", 0)
+count = 0
 
 print("Le comptage va commencer.")
 
-while (getVar("count") <= 10):
-	print(getVar("count"))
-	setVar("count", getVar("count")+1)
+while (count <= 10):
+	print(count)
+	count = count + 1
 
 print("Le comptage est terminé.")
 ```
@@ -306,27 +306,27 @@ Ce programme permet de dire bonjour en fonction d'une heure définie sous la var
 ```
 CONSOLE //doit être placé au début du code afin d'afficher la console sur l'application
 
-setVar("time", 17) //définition de la variable time
+time = 17 //définition de la variable time
 
-if (getVar("time") <= 12):
+if (time <= 12):
 	sayGoodMorning("Patrick")
 else:
-	if (getVar("time") <= 18):
+	if (time <= 18):
 		sayGoodAfternoon("Jean")
 	else:
 		sayGoodEvening("Antonio")
 
 //cette fonction permet de dire bonjour le matin
 function sayGoodMorning(name):
-	print("Good morning", getVar("name"))
+	print("Good morning", name)
 
 //cette fonction permet de dire bonjour l'après midi
 function sayGoodAfternoon(name):
-	print("Good afternoon", getVar("name"))
+	print("Good afternoon", name)
 
 //cette fonction permet de dire bonjour le soir
 function sayGoodEvening(name):
-	print("Good evening", getVar("name"))
+	print("Good evening", name)
 ```
 ### Afficher le prix de consoles de jeux
 ```
@@ -337,10 +337,10 @@ print("Prix de la PS 5:", getPrice("PlayStation 5"))
 
 //cette fonction permet de récupérer le prix d'une console de jeu en fonction de son paramètre article
 function getPrice(article):
-	if (getVar("article") == "Xbox One"): //on vérifie le nom du paramètre article
+	if (article == "Xbox One"): //on vérifie le nom du paramètre article
 		return(200)
 	else:
-		if (getVar("article") == "PlayStation 5"): //ici aussi
+		if (article == "PlayStation 5"): //ici aussi
 			return(450)
 ```
 ### Faire un compte à rebours
@@ -349,11 +349,11 @@ CONSOLE //doit être placé au début du code afin d'afficher la console sur l'a
 
 print("Début du compte à rebours")
 
-setVar("i", 10)
+i = 10
 
-while (getVar("i") >= 0): //tant que i est supérieur ou égal à 0
-	print(getVar("i"))
-	setVar("i", getVar("i")-1) //on retire 1 à i
+while (i >= 0): //tant que i est supérieur ou égal à 0
+	print(i)
+	i = i - 1 //on retire 1 à i
 
 print("BONNE ANNÉE !")
 ```
@@ -371,7 +371,7 @@ print("BONNE ANNÉE !")
 - [x] Fonction basique ```print()```
 - [x] Type complexe: ```equality```
 - [x] Type complexe: ```operation```
-- [x] Fonctions basiques ```setVar()``` et ```getVar()```
+- [x] Fonctions basiques ```setVar()``` et ```getVar()``` (remplacées ensuite par une syntaxe de variables plus classique)
 - [x] Pouvoir définir une fonction exécutant du code (type complexe: ```function```)
 - [x] Permettre de retourner une valeur au sein de la fonction à l'aide de ```return()```
 - [x] Accès aux paramètres à l'intérieur d'une fonction définie avec ```getVar()```
@@ -379,7 +379,10 @@ print("BONNE ANNÉE !")
 - [x] Conditions ```if()``` ```else```
 - [x] Commentaires ```//```
 - [x] Fonction basique de boucle: ```while()```
-- [x] Type ```array``` (tableau) et fonctions basiques associées
+- [x] Type ```array``` (liste) et fonctions basiques ```add()```, ```remove()``` et ```size()``` associées
+- [ ] Pouvoir stocker une valeur de type ```function``` dans une variable ainsi que comme paramètre de fonction créée
+- [ ] Fonction anonyme
+- [ ] Fonctions basiques ```random()``` et ```interval()```
 - [ ] Type ```map``` (dictionnaire) et fonctions basiques associées
 ### Compilateur évolué
 - [x] Représentation hierarchique et intéractive des composants sur l'interface de programmation
@@ -387,11 +390,13 @@ print("BONNE ANNÉE !")
 - [x] Possibilité de rendre un composant visible à travers une image ou un objet stylisable
 - [x] Evenements associés à l'intéraction de l'utilisateur (lorsqu'on touche l'écran)
 - [x] Pouvoir modifier du contenu textuel et du style depuis le code
-- [ ] Fonctions basiques associées au placement / déplacement d'un composant visible
+- [ ] Ajout des propriétés de style correspondant au type de position et aux coordonnées X, Y et Z d'un composant
+- [ ] Possibilité de créer une instance de composant (avec ```enable()```)
+- [ ] Possibilité de déplacer ou dupliquer un composant depuis l'interface
 - [ ] Possibilité de créer des variables globales qu'une liste de composant définie peut récupérer / mettre à jour
 - [ ] Evenement associé à une mise à jour du composant, causée par la modification d'une variable privée ou globale dont le composant est concerné
-- [ ] Pouvoir définir une image de fond à un composant aire
-- [ ] Fonction permettant de stocker le score de l'utilisateur sur la base de donnée de Peps
+- [ ] Ajout de la propriété de style correspondant à l'image de fond d'un composant aire
+- [ ] Fonction permettant de stocker le score de l'utilisateur sur la base de données de Peps
 ## Informations techniques
 Peps est codé en Javascript avec les frameworks React et React-Native.
 Le compileur de Peps se trouve sur l'application.
