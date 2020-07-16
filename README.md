@@ -424,6 +424,7 @@ print("BONNE ANNÉE !")
 - [x] Fonctions basiques ```setInterval()``` et ```clearInterval()```
 - [ ] Type ```map``` (dictionnaire) et fonctions basiques associées
 - [ ] Pouvoir associer différentes valeurs ```anyType``` en un seul ```string```
+- [ ] Pouvoir définir les ```array``` et les ```map``` sur plusieurs lignes
 ### Compilateur évolué
 - [x] Représentation hierarchique et intéractive des composants sur l'interface de programmation
 - [x] Séparation du code en plusieurs composants + suite algorithmique des composants
