@@ -280,6 +280,10 @@ on touch:
 ### Liste des propriétés de style
 #### Composants "aire"
 - ```backgroundColor```: couleur de fond
+- ```position```: type de position
+- ```left```: coordonnée x
+- ```bottom```: coordonnée y
+- ```zIndex```: coordonnée z
 - ```opacity```: opacité
 - ```height```: hauteur
 - ```width```: largeur
@@ -294,6 +298,10 @@ on touch:
 #### Composants "texte"
 - ```textContent```: texte
 - ```color```: couleur
+- ```position```: type de position
+- ```left```: coordonnée x
+- ```bottom```: coordonnée y
+- ```zIndex```: coordonnée z
 - ```fontSize```: taille du texte
 - ```fontWeight```: épaisseur du texte
 - ```textDecorationLine```: soulignage
