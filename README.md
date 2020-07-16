@@ -390,7 +390,7 @@ print("BONNE ANNÉE !")
 - [x] Possibilité de rendre un composant visible à travers une image ou un objet stylisable
 - [x] Evenements associés à l'intéraction de l'utilisateur (lorsqu'on touche l'écran)
 - [x] Pouvoir modifier du contenu textuel et du style depuis le code
-- [ ] Ajout des propriétés de style correspondant au type de position et aux coordonnées X, Y et Z d'un composant
+- [x] Ajout des propriétés de style correspondant au type de position et aux coordonnées X, Y et Z d'un composant
 - [ ] Possibilité de créer une instance de composant avec ```enable()``` et l'objet dynamique ```parent``` (équivalent props)
 - [ ] Possibilité de déplacer ou dupliquer un composant depuis l'interface
 - [ ] Objets dynamiques ```state``` (interne à un composant) et ```globalState``` (pour tous les composants)
