@@ -393,9 +393,10 @@ print("BONNE ANNÉE !")
 - [ ] Ajout des propriétés de style correspondant au type de position et aux coordonnées X, Y et Z d'un composant
 - [ ] Possibilité de créer une instance de composant avec ```enable()``` et l'objet dynamique ```parent``` (équivalent props)
 - [ ] Possibilité de déplacer ou dupliquer un composant depuis l'interface
-- [ ] objet dynamique ```state``` (pour un composant), ```globalState``` (pour tous les composants)
+- [ ] Objets dynamiques ```state``` (interne à un composant) et ```globalState``` (pour tous les composants)
 - [ ] Evénements ```on stateUpdate```, ```on globalStateUpdate```, et ```on parentUpdate```
 - [ ] Ajout de la propriété de style correspondant à l'image de fond d'un composant aire
+- [ ] Possibilité de créer des clones de composant: lorsque le développeur change le code / style d'un composant, tous ses clones changent aussi le leur
 - [ ] Fonction permettant de stocker le score de l'utilisateur sur la base de données de Peps
 ## Informations techniques
 Peps est codé en Javascript avec les frameworks React et React-Native.
