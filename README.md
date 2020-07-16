@@ -63,6 +63,15 @@ wait(number delay, function functionTriggeredAfterWait)
   - ```delay```: le délai d’attente avant exécution de la fonction en millisecondes,
   - ```functionTriggeredAfterWait```: la fonction exécutée après le délai choisi.
 - Type de valeur retournée par la fonction: ```undefined```.
+### Générer un nombre aléatoire compris dans un intervalle
+```
+randomNumber(number min, number max)
+```
+- Description: Génère un nombre aléatoire entre un nombre minimum et un nombre maximum.
+- Paramètres:
+  - ```min```: le nombre minimum
+  - ```max```: le nombre maximum
+- Type de valeur retournée par la fonction: ```number```.
 ## Variables
 ### Définition d'une variable
 ```
@@ -389,7 +398,8 @@ print("BONNE ANNÉE !")
 - [x] Fonction basique de boucle: ```while()```
 - [x] Type ```array``` (liste) et fonctions basiques ```add()```, ```remove()``` et ```size()``` associées
 - [x] Pouvoir stocker une valeur de type ```function``` dans une variable ainsi que comme paramètre de fonction créée
-- [ ] Fonctions basiques ```random()``` et ```interval()```
+- [x] Fonction basique ```randomNumber()```
+- [ ] Fonction basique ```interval()```
 - [ ] Type ```map``` (dictionnaire) et fonctions basiques associées
 ### Compilateur évolué
 - [x] Représentation hierarchique et intéractive des composants sur l'interface de programmation
