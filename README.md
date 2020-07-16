@@ -388,7 +388,7 @@ print("BONNE ANNÉE !")
 - [x] Commentaires ```//```
 - [x] Fonction basique de boucle: ```while()```
 - [x] Type ```array``` (liste) et fonctions basiques ```add()```, ```remove()``` et ```size()``` associées
-- [ ] Pouvoir stocker une valeur de type ```function``` dans une variable ainsi que comme paramètre de fonction créée
+- [x] Pouvoir stocker une valeur de type ```function``` dans une variable ainsi que comme paramètre de fonction créée
 - [ ] Fonction anonyme
 - [ ] Fonctions basiques ```random()``` et ```interval()```
 - [ ] Type ```map``` (dictionnaire) et fonctions basiques associées
