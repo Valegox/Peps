@@ -421,7 +421,7 @@ print("BONNE ANNÉE !")
 - [x] Type ```array``` (liste) et fonctions basiques ```add()```, ```remove()``` et ```size()``` associées
 - [x] Pouvoir stocker une valeur de type ```function``` dans une variable ainsi que comme paramètre de fonction créée
 - [x] Fonction basique ```randomNumber()```
-- [x] Fonction basique ```interval()```
+- [x] Fonctions basiques ```setInterval()``` et ```clearInterval()```
 - [ ] Type ```map``` (dictionnaire) et fonctions basiques associées
 ### Compilateur évolué
 - [x] Représentation hierarchique et intéractive des composants sur l'interface de programmation
