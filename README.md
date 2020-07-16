@@ -63,7 +63,29 @@ wait(number delay, function functionTriggeredAfterWait)
   - ```delay```: le délai d’attente avant exécution de la fonction en millisecondes,
   - ```functionTriggeredAfterWait```: la fonction exécutée après le délai choisi.
 - Type de valeur retournée par la fonction: ```undefined```.
-### Générer un nombre aléatoire compris dans un intervalle
+### Exécuter une fonction toutes les n secondes
+Créer l'intervalle:
+```
+setInterval(string intervalName, function triggeredFunction, number delay)
+```
+- Description: Exécute une fonction à intervalle d'un délai défini.
+- Paramètres:
+  - ```intervalName```: nom de l'intervalle que l'on crée,
+  - ```triggeredFunction```: fonction exécutée à l'intervalle défini,
+  - ```delay```: le délai entre chaque exécution de fonction.
+- Type de valeur retournée par la fonction: ```undefined```.
+
+Arrêter l'intervalle:
+```
+clearInterval(string intervalName)
+```
+- Description: Arrête un intervalle.
+- Paramètre:
+  - ```intervalName```: nom de l'intervalle que l'on veut tuer.
+- Type de valeur retournée par la fonction: ```undefined```.
+
+Attention: les intervalles sont globaux, ils ne doivent pas être créés deux fois avec le même nom dans différents composants. On peut tuer un intervalle créé dans un composant A depuis un composant B.
+### Générer un nombre aléatoire compris entre deux nombres
 ```
 randomNumber(number min, number max)
 ```
@@ -399,7 +421,7 @@ print("BONNE ANNÉE !")
 - [x] Type ```array``` (liste) et fonctions basiques ```add()```, ```remove()``` et ```size()``` associées
 - [x] Pouvoir stocker une valeur de type ```function``` dans une variable ainsi que comme paramètre de fonction créée
 - [x] Fonction basique ```randomNumber()```
-- [ ] Fonction basique ```interval()```
+- [x] Fonction basique ```interval()```
 - [ ] Type ```map``` (dictionnaire) et fonctions basiques associées
 ### Compilateur évolué
 - [x] Représentation hierarchique et intéractive des composants sur l'interface de programmation
