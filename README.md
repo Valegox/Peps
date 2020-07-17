@@ -176,7 +176,7 @@ Une liste peut contenir elle même une liste:
 print([2, ["test", 0], false])
 ```
 On peut récupérer un élément précis d'une liste à partir de sa position, le premier élément correspondant à la position 1.
-Pour cela on utilise le caractère @ suivi de la position.
+Pour cela on utilise le caractère ```@``` suivi de la position.
 ```
 print([9, 42, 17]@2) //affiche 42
 ```
@@ -203,6 +203,24 @@ myArray = [1, 2]
 print(myArray) //affiche [1,2] sur la console
 add("myArray", 3)
 print(myArray) //affiche [1,2,3] sur la console
+```
+### map
+#### Description
+Le type ```map``` correspond à un ensemble de clés-valeurs.
+#### Exemple
+```
+{ name: "Jean", age: 27, married: false }
+```
+On peut récupérer une valeur de l'objet à partir de sa clé. Pour cela on utilise le caractère ```.``` suivi de la clé.
+```
+user = { name: "Jean", age: 27, married: false }
+print(user.name) //affiche "Jean" sur la console
+```
+Si l'on ne connaît la clé mais que l'on peut la retrouver à l'aide d'une fonction ou d'une variable, on peut utiliser des crochets ```[]```:
+```
+key = "name"
+user = { name: "Jean", age: 27, married: false }
+print(user.[key]) //affiche "Jean" sur la console
 ```
 ## Conditions
 ### if
