@@ -465,7 +465,7 @@ print("BONNE ANNÉE !")
 - [x] Pouvoir stocker une valeur de type ```function``` dans une variable ainsi que comme paramètre de fonction créée
 - [x] Fonction basique ```randomNumber()```
 - [x] Fonctions basiques ```setInterval()``` et ```clearInterval()```
-- [ ] Type ```map``` (dictionnaire) et fonctions basiques associées
+- [x] Type ```map``` (dictionnaire) et fonctions basiques associées
 - [ ] Pouvoir associer différentes valeurs ```anyType``` en un seul ```string```
 - [ ] Pouvoir définir les ```array``` et les ```map``` sur plusieurs lignes
 ### Compilateur évolué
