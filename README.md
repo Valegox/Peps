@@ -223,6 +223,30 @@ user = { name: "Jean", age: 27, married: false }
 print(user.[key]) //affiche "Jean" sur la console
 ```
 Attention: pour l'instant, il est interdit de faire suivre plusieurs ```.``` et/ou ```@``` dans une même ligne. Il faut créer plusieurs variables.
+#### Fonctions associées au type
+##### keysList()
+La fonction ```keysList()``` retourne une liste de ```string``` regroupant toutes les clés d'une ```map```.
+###### Forme
+```
+keysList(map parameters)
+```
+###### Exemple
+```
+user = { name: "Jean", age: 27, married: false }
+print(keysList(user)) //affiche ["name", "age", "married"] sur la console
+```
+##### setKey()
+La fonction ```setKey()``` défini une clé dans un ```map```.
+###### Forme
+```
+setKey(string varNameOfMap, string keyName, anyType value)
+```
+###### Exemple
+```
+user = { name: "Jean", age: 27, married: false }
+setKey("user", "livingPlace", "Paris")
+print(user) //affiche { name: "Jean", age: 27, married: false, livingPlace: "Paris" } sur la console
+```
 ## Conditions
 ### if
 #### Description
