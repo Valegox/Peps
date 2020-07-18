@@ -222,6 +222,7 @@ key = "name"
 user = { name: "Jean", age: 27, married: false }
 print(user.[key]) //affiche "Jean" sur la console
 ```
+Attention: pour l'instant, il est interdit de faire suivre plusieurs ```.``` et/ou ```@``` dans une même ligne. Il faut créer plusieurs variables.
 ## Conditions
 ### if
 #### Description
