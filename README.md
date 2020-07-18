@@ -339,6 +339,8 @@ on touch:
 Si le composant est invisible, il n'y aura pas d'erreur mais le ```print("hello")``` ne sera jamais appelé car il est impossible d'appuyer sur le composant.
 ### Liste des types d'événements
 - ```touch```
+## L'objet DEVICE
+L'objet ```map``` ```DEVICE``` est accessible depuis n'importe quel composant. Il permet de récupérer les dimensions de l'écran l'appareil en pixels, ainsi que l'OS (```"android"``` ou ```"ios"```).
 ## Styliser ses composants dynamiquement
 Il est possible de styliser ses composants de manière statique depuis l'interface de développement. Néanmmoins, il est possible que vous vouliez changer des particularités visuelles depuis le code.
 ### Forme
