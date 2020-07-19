@@ -310,11 +310,12 @@ Un jeu codé en Peps regroupe plusieurs composants. Un composant peut être visi
 
 
 On peut styliser ces composants depuis l'interface du site, mais aussi y inclure du code. Les composants sont structurés hiérarchiquement, on parle de composant parent et de composant enfant.
-### Activer et désactiver un composant
+### Activer et désactiver un composant en lui confiant des données
 Pour qu'un composant vive, il faut que son parent l'active à travers cette fonction basique:
 ```
-enable(string componentName)
+enable(string componentName, map dataToPass)
 ```
+Le composant enfant a accès à ```dataToPass``` depuis l'objet ```PARENT```.
 On peut à tout moment tuer le composant de cette manière:
 ```
 disable(string componentName)
@@ -477,7 +478,7 @@ print("BONNE ANNÉE !")
 - [x] Evenements associés à l'intéraction de l'utilisateur (lorsqu'on touche l'écran)
 - [x] Pouvoir modifier du contenu textuel et du style depuis le code
 - [x] Ajout des propriétés de style correspondant au type de position et aux coordonnées X, Y et Z d'un composant
-- [ ] Possibilité de créer une instance de composant avec ```enable()``` et l'objet dynamique ```parent``` (équivalent props)
+- [x] Possibilité de créer une instance de composant avec ```enable()``` et l'objet ```map```  ```PARENT```
 - [ ] Possibilité de déplacer ou dupliquer un composant depuis l'interface
 - [ ] Objets dynamiques ```state``` (interne à un composant) et ```globalState``` (pour tous les composants)
 - [ ] Evénements ```on stateUpdate```, ```on globalStateUpdate```, et ```on parentUpdate```
