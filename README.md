@@ -133,12 +133,12 @@ print(myFunctionName(42)) //ceci exécutera la fonction, donc myCode(42) et affi
 ### equality
 #### Description
 Egalité permettant de réaliser des tests entre deux valeur anyType au sein du code. Plusieurs types d’égalités:
-- == : Vérifier si deux valeurs sont égales;
-- != : Vérifier si deux valeurs ne sont pas égales;
-- \> : Vérifier si une valeur est plus grande que l’autre;
-- < : Vérifier si une valeur est plus petite qu’une autre;
-- \>= : Vérifier si une valeur est plus grande ou égale qu’une autre;
-- <= : Vérifier si une valeur est plus petite ou égale qu’une autre.
+- ```==``` : Vérifier si deux valeurs sont égales;
+- ```!=``` : Vérifier si deux valeurs ne sont pas égales;
+- ```>``` : Vérifier si une valeur est plus grande que l’autre;
+- ```<``` : Vérifier si une valeur est plus petite qu’une autre;
+- ```>=``` : Vérifier si une valeur est plus grande ou égale qu’une autre;
+- ```<=``` : Vérifier si une valeur est plus petite ou égale qu’une autre.
 #### Exemples
 ```
 print(2 == 2) //affiche true sur la console
@@ -151,10 +151,10 @@ print("test" != "test") //affiche false sur la console
 ### operation
 #### Description
 Opération mathématique entre plusieurs valeurs de type number à partir des opérateurs suivants:
-- \+ : addition
-- \- : soustraction
-- \* : multiplication
-- / : division
+- ```+``` : addition
+- ```--``` : soustraction (deux ```-``` dans une opération, un seul ```-``` pour le signe de la valeur)
+- ```*``` : multiplication
+- ```/``` : division
 #### Exemples
 ```
 print(2 + 2) //affiche 4 sur la console
@@ -328,7 +328,7 @@ Un composant mort n'exécute plus de code, et devient invisible s'il a été par
 Le code d'un bloc événement n'est exécuté que lorsque celui-ci se réalise.
 ### Forme
 ```
-on myEvent:
+on my event:
 	myCode()
 ```
 ### Exemple
@@ -339,7 +339,8 @@ on touch:
 ```
 Si le composant est invisible, il n'y aura pas d'erreur mais le ```print("hello")``` ne sera jamais appelé car il est impossible d'appuyer sur le composant.
 ### Liste des types d'événements
-- ```touch```
+- ```on touch``` lorsque l'on appuie sur le composant
+- ```on parent update``` lorsque l'objet ```PARENT``` est mit à jour (lié à une modification de variable passée en argument de ```enable()``` dans le composant parent)
 ## L'objet DEVICE
 L'objet ```map``` ```DEVICE``` est accessible depuis n'importe quel composant. Il permet de récupérer les dimensions de l'écran l'appareil en pixels, ainsi que l'OS (```"android"``` ou ```"ios"```).
 ## Styliser ses composants dynamiquement
@@ -479,9 +480,8 @@ print("BONNE ANNÉE !")
 - [x] Pouvoir modifier du contenu textuel et du style depuis le code
 - [x] Ajout des propriétés de style correspondant au type de position et aux coordonnées X, Y et Z d'un composant
 - [x] Possibilité de créer une instance de composant avec ```enable()``` et l'objet ```map```  ```PARENT```
+- [x] Evenement ```on parent update```
 - [ ] Possibilité de déplacer ou dupliquer un composant depuis l'interface
-- [ ] Objets dynamiques ```state``` (interne à un composant) et ```globalState``` (pour tous les composants)
-- [ ] Evénements ```on stateUpdate```, ```on globalStateUpdate```, et ```on parentUpdate```
 - [ ] Ajout de la propriété de style correspondant à l'image de fond d'un composant aire
 - [ ] Possibilité de créer des clones de composant: lorsque le développeur change le code / style d'un composant, tous ses clones changent aussi le leur
 - [ ] Fonction permettant de stocker le score de l'utilisateur sur la base de données de Peps
