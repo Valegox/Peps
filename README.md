@@ -94,6 +94,12 @@ randomNumber(number min, number max)
   - ```min```: le nombre minimum
   - ```max```: le nombre maximum
 - Type de valeur retournée par la fonction: ```number```.
+### Quitter le jeu
+```
+quitGame()
+```
+- Description: Dès que la fonction est exécutée, le jeu se ferme et l'utilisateur est redirigé sur la page de navigation Peps
+- Type de valeur retournée par la fonction: ```undefined```.
 ## Variables
 ### Définition d'une variable
 ```
