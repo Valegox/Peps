@@ -319,15 +319,19 @@ On peut styliser ces composants depuis l'interface du site, mais aussi y inclure
 ### Activer et désactiver un composant en lui confiant des données
 Pour qu'un composant vive, il faut que son parent l'active à travers cette fonction basique:
 ```
-enable(string componentName, map dataToPass)
+enable(string componentName, map dataToPass, string componentID)
 ```
 Le composant enfant a accès à ```dataToPass``` depuis l'objet ```PARENT```.
-On peut à tout moment tuer le composant de cette manière:
+
+```componentID``` correspond à un indentifiant que plusieurs composants peuvent avoir en commun.
+
+On peut à tout moment tuer le composant:
 ```
-disable(string componentName)
+disable(string componentName) //tuer le ou les composants enfants ayant ce nom
+disable(string componentID) //tuer le ou les composants enfants ayant cet ID
 ```
-Seul le parent d'un composant peut tuer son enfant. Lorsqu'un composant est tué, l'ensemble de ses enfants le sont aussi.
-Un composant mort n'exécute plus de code, et devient invisible s'il a été paramétré préalablement comme visible.  
+Seul le parent d'un composant peut directement tuer son enfant. Lorsqu'un composant est tué, l'ensemble de ses enfants le sont aussi.
+Un composant mort n'exécute plus aucun code, et devient invisible s'il a été paramétré préalablement comme visible.
 ### Le composant Main
 ```Main``` est un composant défini par défaut au sommet de la chaîne hierarchique des composants. Il n'a donc pas de parent, et tous les composants du jeu sont ses enfants. ```Main``` est activé dès la compilation. Il est impossible de le tuer. C'est à l'intérieur de ce composant que l'on peut afficher la console à l'aide du mot-clé ```CONSOLE```, placé au tout début du code.
 ## Evenements
