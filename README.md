@@ -333,7 +333,7 @@ disable(string componentID) //tuer le ou les composants enfants ayant cet ID
 Seul le parent d'un composant peut directement tuer son enfant. Lorsqu'un composant est tué, l'ensemble de ses enfants le sont aussi.
 Un composant mort n'exécute plus aucun code, et devient invisible s'il a été paramétré préalablement comme visible.
 ### Le composant Main
-```Main``` est un composant défini par défaut au sommet de la chaîne hierarchique des composants. Il n'a donc pas de parent, et tous les composants du jeu sont ses enfants. ```Main``` est activé dès la compilation. Il est impossible de le tuer. C'est à l'intérieur de ce composant que l'on peut afficher la console à l'aide du mot-clé ```CONSOLE```, placé au tout début du code.
+```Main``` est un composant défini par défaut au sommet de la chaîne hierarchique des composants. Il n'a donc pas de parent, et tous les composants du jeu sont ses enfants. ```Main``` est activé dès le lancement du programme. Il est impossible de le tuer. C'est à l'intérieur de ce composant que l'on peut afficher la console à l'aide du mot-clé ```CONSOLE```, placé au tout début du code.
 ## Evenements
 Le code d'un bloc événement n'est exécuté que lorsque celui-ci se réalise.
 ### Forme
@@ -463,7 +463,7 @@ print("BONNE ANNÉE !")
 ### Langage de programmation: bases algorithmiques
 - [x] Lecture algorithmique et envoi du futur code Peps sur la base de données
 - [x] Affichage de la console lorsque le code commence par le mot-clé CONSOLE
-- [x] Initialisation du compileur et des types primitifs
+- [x] Initialisation du transpileur et des types primitifs
 - [x] Fonction basique ```print()```
 - [x] Type complexe: ```equality```
 - [x] Type complexe: ```operation```
@@ -482,7 +482,7 @@ print("BONNE ANNÉE !")
 - [x] Type ```map``` (dictionnaire) et fonctions basiques associées
 - [ ] Pouvoir associer différentes valeurs ```anyType``` en un seul ```string```
 - [ ] Pouvoir définir les ```array``` et les ```map``` sur plusieurs lignes
-### Compilateur évolué
+### Transpileur évolué
 - [x] Représentation hierarchique et intéractive des composants sur l'interface de programmation
 - [x] Séparation du code en plusieurs composants + suite algorithmique des composants
 - [x] Possibilité de rendre un composant visible à travers une image ou un objet stylisable
@@ -497,5 +497,5 @@ print("BONNE ANNÉE !")
 - [ ] Fonction permettant de stocker le score de l'utilisateur sur la base de données de Peps
 ## Informations techniques
 Peps est codé en Javascript avec les frameworks React et React-Native.
-Le compileur de Peps se trouve sur l'application.
+Le transpileur de Peps se trouve sur l'application.
 Firebase est le service utilisé pour la base de données qui stocke les programmes ainsi que les données des utilisateurs.
