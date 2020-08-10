@@ -201,13 +201,13 @@ print(size([5, 10])) //affiche 2 sur la console car il y a deux éléments dans 
 La fonction ```add()``` ajoute une valeur a la fin d'une liste stockée en tant que variable.
 ###### Forme
 ```
-add(string varNameOfArray, anyType valueToAdd)
+add(variable arrayToModify, anyType valueToAdd)
 ```
 ###### Exemple
 ```
 myArray = [1, 2]
 print(myArray) //affiche [1,2] sur la console
-add("myArray", 3)
+add(myArray, 3)
 print(myArray) //affiche [1,2,3] sur la console
 ```
 ### map
@@ -245,12 +245,12 @@ print(keysList(user)) //affiche ["name", "age", "married"] sur la console
 La fonction ```setKey()``` défini une clé dans un ```map```.
 ###### Forme
 ```
-setKey(string varNameOfMap, string keyName, anyType value)
+setKey(variable mapToModify, string keyName, anyType value)
 ```
 ###### Exemple
 ```
 user = { name: "Jean", age: 27, married: false }
-setKey("user", "livingPlace", "Paris")
+setKey(user, "livingPlace", "Paris")
 print(user) //affiche { name: "Jean", age: 27, married: false, livingPlace: "Paris" } sur la console
 ```
 ## Conditions
