@@ -323,6 +323,8 @@ enable(string componentName, map dataToPass, string componentID)
 ```
 Le composant enfant a accès à ```dataToPass``` depuis l'objet ```PARENT```.
 
+Il est impossible d'appeler une fonction passée dans l'objet ```PARENT``` à la première exécution lors du ```enable()```.
+
 ```componentID``` correspond à un indentifiant que plusieurs composants peuvent avoir en commun.
 
 On peut à tout moment tuer le composant:
