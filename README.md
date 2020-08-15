@@ -85,6 +85,8 @@ clearInterval(string intervalName)
 - Type de valeur retournée par la fonction: ```undefined```.
 
 Attention: les intervalles sont globaux, ils ne doivent pas être créés deux fois avec le même nom dans différents composants. On peut tuer un intervalle créé dans un composant A depuis un composant B.
+### Animer un composant
+
 ### Générer un nombre aléatoire compris entre deux nombres
 ```
 randomNumber(number min, number max)
@@ -398,6 +400,23 @@ on touch:
 - ```fontStyle```: italique
 - ```fontFamily```: police d'écriture
 - ```margin```: marge extérieure aux bordures
+## Animer un composant
+La première solution qui vous viendra à l'esprit si vous voulez animer votre composant sera de placer un ```setStyle()``` à l'intérieur d'un ```setInterval()```. Cette solution n'est pas optimale car elle génère des problèmes de fluidité sur Android. La manière la plus rapide et optimisée de créer une animation est d'utiliser la fonction Peps ```animate()```.
+### Forme
+```
+animate(string animationType, number finalValue, number duration, number numberOfTimes, function callback)
+```
+### Paramètres
+- ```animationType```: le type d'animation, en voici la liste:
+	- ```spin``` pour exercer une rotation du composant sur lui même,
+	- ```moveX``` pour déplacer le composant horizontalement,
+	- ```moveY``` pour déplacer le composant verticalement.
+- ```finalValue```: la valeur finale de l'animation. Le sens de l'animation dépend de son signe.
+	- pour les rotations, 0 correspond à 0 degrès, 0.5 correspond à 180 degrès et 1 correspond à 360 degrès.
+	- pour les déplacements, il s'agit de la valeur en pixel.
+- ```duration```: la durée de l'animation en millisecondes.
+- ```numberOfTimes```: le nombre de fois que l'animation se produit en boucle. Pour que l'animation continue indéfiniment, ```numberOfTime``` doit être égal à -1.
+- ```callback```: fonction Peps effectuée une fois que l'animation est terminée.
 ## Exemples de code
 ### Dire bonjour en fonction d'une heure
 Ce programme permet de dire bonjour en fonction d'une heure définie sous la variable ```time```.
