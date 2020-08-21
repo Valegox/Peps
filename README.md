@@ -479,7 +479,7 @@ print("BONNE ANNÉE !")
 - [x] Initialisation + Interfaces de base + liaison de l'application au site (frontend & database)
 - [x] Interface du site
 - [x] Interface de l'application
-- [ ] Système d'authentification avec projets et scores dédiés à chaque compte
+- [x] Système d'authentification avec projets dédiés à chaque compte
 - [ ] Documentation sur un site dédié
 ### Langage de programmation: bases algorithmiques
 - [x] Lecture algorithmique et envoi du futur code Peps sur la base de données
@@ -501,7 +501,7 @@ print("BONNE ANNÉE !")
 - [x] Fonction basique ```randomNumber()```
 - [x] Fonctions basiques ```setInterval()``` et ```clearInterval()```
 - [x] Type ```map``` (dictionnaire) et fonctions basiques associées
-- [ ] Pouvoir associer différentes valeurs ```anyType``` en un seul ```string```
+- [x] Pouvoir associer différentes valeurs ```anyType``` en un seul ```string```
 - [ ] Pouvoir définir les ```array``` et les ```map``` sur plusieurs lignes
 ### Transpileur évolué
 - [x] Représentation hierarchique et intéractive des composants sur l'interface de programmation
@@ -512,7 +512,7 @@ print("BONNE ANNÉE !")
 - [x] Ajout des propriétés de style correspondant au type de position et aux coordonnées X, Y et Z d'un composant
 - [x] Possibilité de créer une instance de composant avec ```enable()``` et l'objet ```map```  ```PARENT```
 - [x] Evenement ```on parent update```
-- [ ] Possibilité de déplacer ou dupliquer un composant depuis l'interface
+- [ ] Possibilité de déplacer un composant depuis l'interface (drag and drop)
 - [ ] Ajout de la propriété de style correspondant à l'image de fond d'un composant aire
 - [ ] Possibilité de créer des clones de composant: lorsque le développeur change le code / style d'un composant, tous ses clones changent aussi le leur
 - [ ] Fonction permettant de stocker le score de l'utilisateur sur la base de données de Peps
