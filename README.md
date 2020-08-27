@@ -102,6 +102,17 @@ quitGame()
 ```
 - Description: Dès que la fonction est exécutée, le jeu se ferme et l'utilisateur est redirigé sur la page de navigation Peps
 - Type de valeur retournée par la fonction: ```undefined```.
+### Faire vibrer l'appareil
+```
+vibrate(string intensity)
+```
+- Description: Fait vibrer l'appareil sur une courte durée.
+- Paramètre:
+  - ```intensity```: l'intensité de la vibration. Voici les trois niveaux d'intensité:
+  	- ```light```
+	- ```medium```
+	- ```heavy```
+- Type de valeur retournée par la fonction: ```undefined```.
 ## Variables
 ### Définition d'une variable
 ```
@@ -502,7 +513,7 @@ print("BONNE ANNÉE !")
 - [x] Fonctions basiques ```setInterval()``` et ```clearInterval()```
 - [x] Type ```map``` (dictionnaire) et fonctions basiques associées
 - [x] Pouvoir associer différentes valeurs ```anyType``` en un seul ```string```
-- [ ] Pouvoir définir les ```array``` et les ```map``` sur plusieurs lignes
+- [ ] Pouvoir définir les ```array``` et les ```map``` sur plusieurs lignes de code
 ### Transpileur évolué
 - [x] Représentation hierarchique et intéractive des composants sur l'interface de programmation
 - [x] Séparation du code en plusieurs composants + suite algorithmique des composants
@@ -512,10 +523,11 @@ print("BONNE ANNÉE !")
 - [x] Ajout des propriétés de style correspondant au type de position et aux coordonnées X, Y et Z d'un composant
 - [x] Possibilité de créer une instance de composant avec ```enable()``` et l'objet ```map```  ```PARENT```
 - [x] Evenement ```on parent update```
-- [ ] Possibilité de déplacer un composant depuis l'interface (drag and drop)
+- [x] Possibilité de copier coller un composant depuis l'interface
+- [ ] Fonction ```vibrate()```
 - [ ] Ajout de la propriété de style correspondant à l'image de fond d'un composant aire
 - [ ] Possibilité de créer des clones de composant: lorsque le développeur change le code / style d'un composant, tous ses clones changent aussi le leur
-- [ ] Fonction permettant de stocker le score de l'utilisateur sur la base de données de Peps
+- [ ] Fonction permettant de stocker des données de l'utilisateur sur la base de données de Peps
 ## Informations techniques
 Peps est codé en Javascript avec les frameworks React et React-Native.
 Le transpileur de Peps se trouve sur l'application.
