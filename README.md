@@ -85,7 +85,6 @@ clearInterval(string intervalName)
 - Type de valeur retournée par la fonction: ```undefined```.
 
 Attention: les intervalles sont globaux, ils ne doivent pas être créés deux fois avec le même nom dans différents composants. On peut tuer un intervalle créé dans un composant A depuis un composant B.
-### Animer un composant
 
 ### Générer un nombre aléatoire compris entre deux nombres
 ```
