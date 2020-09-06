@@ -386,8 +386,8 @@ on touch:
 - ```x```: coordonnée x
 - ```y```: coordonnée y
 - ```z```: coordonnée z
-- ```transformX```: translation sur l'axe x en prenant en compte la propriété x
-- ```transformY```: translation sur l'axe y en prenant en compte la propriété z
+- ```translateX```: translation sur l'axe x en prenant en compte la propriété x
+- ```translateY```: translation sur l'axe y en prenant en compte la propriété z
 - ```rotation```: rotation en degrés
 - ```opacity```: opacité
 - ```height```: hauteur
@@ -527,7 +527,7 @@ print("BONNE ANNÉE !")
 - [x] Evenement ```on parent update```
 - [x] Possibilité de copier coller un composant depuis l'interface
 - [x] Fonction ```vibrate()```
-- [ ] Ajout des propriétés de style ```transformX```, ```transformY```
+- [ ] Ajout des propriétés de style ```translateX```, ```translateY```
 - [ ] Ajout de la propriété de style correspondant à l'image de fond d'un composant aire
 - [ ] Possibilité de créer des clones de composant: lorsque le développeur change le code / style d'un composant, tous ses clones changent aussi le leur
 - [ ] Fonction permettant de stocker des données de l'utilisateur sur la base de données de Peps
