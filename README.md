@@ -401,9 +401,9 @@ on touch:
 - ```textContent```: texte
 - ```color```: couleur
 - ```position```: type de position
-- ```left```: coordonnée x
-- ```bottom```: coordonnée y
-- ```zIndex```: coordonnée z
+- ```x```: coordonnée x
+- ```y```: coordonnée y
+- ```z```: coordonnée z
 - ```fontSize```: taille du texte
 - ```fontWeight```: épaisseur du texte
 - ```textDecorationLine```: soulignage
@@ -523,7 +523,8 @@ print("BONNE ANNÉE !")
 - [x] Possibilité de créer une instance de composant avec ```enable()``` et l'objet ```map```  ```PARENT```
 - [x] Evenement ```on parent update```
 - [x] Possibilité de copier coller un composant depuis l'interface
-- [ ] Fonction ```vibrate()```
+- [x] Fonction ```vibrate()```
+- [ ] Ajout des propriétés de style ```transformX```, ```transformY``` et ```transformSpin```
 - [ ] Ajout de la propriété de style correspondant à l'image de fond d'un composant aire
 - [ ] Possibilité de créer des clones de composant: lorsque le développeur change le code / style d'un composant, tous ses clones changent aussi le leur
 - [ ] Fonction permettant de stocker des données de l'utilisateur sur la base de données de Peps
