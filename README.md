@@ -415,6 +415,22 @@ on touch:
 - ```margin```: marge extérieure aux bordures
 ## Animer un composant
 La première solution qui vous viendra à l'esprit si vous voulez animer votre composant sera de placer un ```setStyle()``` à l'intérieur d'un ```setInterval()```. Cette solution n'est pas optimale car elle génère des problèmes de fluidité sur Android. La manière la plus rapide et optimisée de créer une animation est d'utiliser la fonction Peps ```animate()```.
+## Faire suivre le composant lorsque le doigt se déplace sur l'écran
+```
+followFinger("x") //sur l'axe x
+followFinger("y") //sur l'axe y
+
+unfollowFinger("x")
+unfollowFinger("y")
+```
+## Coller le composant au doigt lorsqu'il touche l'écran
+```
+stickToFinger("x")
+stickToFinger("y")
+
+unstickFromFinger("x")
+unstickFromFinger("y")
+```
 ### Forme
 ```
 animate(string animationType, number finalValue, number duration, number numberOfTimes, function callback)
