@@ -1,0 +1,17 @@
+//author: PastequeBuild
+//coded in Peps
+//form: includes(variable array, anyType value)
+//this function returns true if array includes value, else returns false
+
+myArray = [true, 5, "hello"]
+
+print(includes(myArray, "hello"))
+
+function includes(array, value):
+  isIncluded = false
+  i = 1
+  while (i <= size(array)):
+    if (myArray@i == value):
+      isIncluded = true
+      i = i + 1
+	return(isIncluded)
