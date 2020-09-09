@@ -386,8 +386,8 @@ on touch:
 - ```x```: coordonnée x
 - ```y```: coordonnée y
 - ```z```: coordonnée z
-- ```translateX```: translation sur l'axe x en prenant en compte la propriété x
-- ```translateY```: translation sur l'axe y en prenant en compte la propriété z
+- ```translateX```: translation sur l'axe x en prenant en compte la propriété x (ne peut pas être appliquée à ```Main```)
+- ```translateY```: translation sur l'axe y en prenant en compte la propriété z (ne peut pas être appliquée à ```Main```)
 - ```rotation```: rotation en degrés
 - ```opacity```: opacité
 - ```height```: hauteur
@@ -414,7 +414,7 @@ on touch:
 - ```fontFamily```: police d'écriture
 - ```margin```: marge extérieure aux bordures
 ## Animer un composant
-La première solution qui vous viendra à l'esprit si vous voulez animer votre composant sera de placer un ```setStyle()``` à l'intérieur d'un ```setInterval()```. Cette solution n'est pas optimale car elle génère des problèmes de fluidité sur Android. La manière la plus rapide et optimisée de créer une animation est d'utiliser la fonction Peps ```animate()```.
+La première solution qui vous viendra à l'esprit si vous voulez animer votre composant sera de placer un ```setStyle()``` à l'intérieur d'un ```setInterval()```. Cette solution n'est pas optimale car elle génère des problèmes de fluidité sur Android. La manière la plus rapide et optimisée de créer une animation est d'utiliser la fonction Peps ```animate()```. Cette fonction ne peut pas être utilisée dans le code du composant ```Main```.
 ### Forme
 ```
 animate(string animationType, number finalValue, number duration, number numberOfTimes, function callback)
@@ -446,7 +446,7 @@ stickToFinger("y")
 unstickFromFinger("x")
 unstickFromFinger("y")
 ```
-## Exemples de code
+## Exemples simples
 ### Dire bonjour en fonction d'une heure
 Ce programme permet de dire bonjour en fonction d'une heure définie sous la variable ```time```.
 ```
