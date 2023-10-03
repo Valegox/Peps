@@ -1,3 +1,9 @@
+**Ce projet est une archive de jeunesse. Faire une surcouche de React Native n'est pas une bonne idée.**
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
 # Peps
 
 <p align="center">
